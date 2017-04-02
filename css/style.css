@@ -42,23 +42,27 @@ img{
 	margin-left: -15px;
 	margin-right: -15px;
 }
-.wrapper{
+nav .wrapper{
 	background:rgba(250, 250, 250, .8);	
 	padding: 5px;
+	position: relative;
 }
 .wrapper_head ul{
-	margin:3px;
+	margin:3px 0;
+	padding: 0;
+	margin-left: 30%;
 }
 .wrapper_head ul li{
-	float: left;
 	text-decoration: none;
 	display: inline-block;
-	float: right;
 }
 .wrapper_head  li  a{
 	color:#5f5f5f;
 	line-height: 0;
 	margin:0px 10px 0px 10px;
+}
+.wrapper_head  li:last-child{
+	margin-right: -15px;
 }
 .wrapper_head  li  a:hover{
 	color:#fd9c06;
@@ -83,11 +87,12 @@ img{
     background: -ms-linear-gradient(top, #e7e7e7 0%,#b3b2b2 50%,#e7e7e7 100%);
     background: linear-gradient(top, #e7e7e7 0%,#b3b2b2 50%,#e7e7e7 100%);	
 }
-.wrapper_head  li:last-child:before{
+.wrapper_head  li:first-child:before{
 	content: none;
 }
 .menuToggle{
  	display: none;
+ 	cursor: pointer;
  }
 .text_header{
 	padding: 84px 0 30px;
@@ -96,11 +101,13 @@ img{
 	font-size:50px;
 	line-height: .6;
 	margin-top: 20px;
+	font-weight: normal;
 }
 .text_header h2{
 	font-size:40px;
 	line-height: .8;
 	margin-top: 10px;
+	font-weight: normal;
 }
 /*form*/
 .form_header{
@@ -205,26 +212,22 @@ input[type=submit]:active{
 .items{
 	margin-top: 80px;
 }
-.items .enter_icon:before{
-	content: "";
+.items .enter_icon{
 	width: 101px;
 	height: 101px;
 	background-position: -21px -502px
 }
-.items .price_icon:before{
-	content: "";
+.items .price_icon{
 	width: 101px;
 	height: 101px;
 	background-position: -21px -392px
 }
-.items .booking_icon:before{
-	content: "";
+.items .booking_icon{
 	width: 101px;
 	height: 101px;
 	background-position: -21px -282px
 }
-.items .reviews_icon:before{
-	content: "";
+.items .reviews_icon{
 	width: 101px;
 	height: 101px;
 	background-position: -21px -167px
@@ -232,20 +235,12 @@ input[type=submit]:active{
 .items{
 	text-align: left;
 }
-.item{
-	padding: 10px;
-	position: relative;
-
+.items h4{
+	font-size: 24px;
+	margin:0;
+	padding: 1% 23% 1% 6%;
+	font-weight: normal;
 }
-h4{
-	font-size: 25px;
-	position: absolute;
-	margin-top: 4%;
-	top:0;
-	left: 40%;
-	padding-right: 20%;
-}
-
 /*main*/
 main .wrapper_room{
 	padding: 13px 15px 15px;
@@ -255,11 +250,18 @@ main .wrapper_room{
 	border-radius: 5px;
 	position: relative;
 }
+.head_rooms h3{
+	font-size: 28px;
+	text-transform: uppercase;
+	font-weight: normal;
+	margin-bottom: 0
+}
 main .hide_text, 
 .text_sidebar{
 	color:#000;
 	padding: 15px 20px;
 }
+
 .main  h5,
 .sidebar h5{
 	font-size: 18px;
@@ -508,14 +510,13 @@ main .text_sidebar p{
 	padding: 10px 46px 10px 20px;
 	margin: 20px  0px 50px 50px;
 }
-.relation .icon_play:after{
-	content: "";
+.relation .icon_play{
 	background-position: -15px -1030px;
 	z-index: 100;
-	width: 25px;
-	height: 25px;
+	width: 27px;
+	height: 27px;
 	margin-left: -40px;
-	margin-bottom: -5px;
+	margin-bottom: -6px;
 }
 .relation h3{
 	color:#fff;
